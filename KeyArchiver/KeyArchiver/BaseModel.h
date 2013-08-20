@@ -10,5 +10,6 @@
 
 @interface BaseModel : NSObject <NSCopying, NSCoding>
 
-- (void)classDealloced;
+- (BOOL)isSameWithObject:(id)obj;
+
 @end

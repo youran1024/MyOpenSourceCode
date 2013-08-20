@@ -27,9 +27,19 @@
 
     data = nil;
     data = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DATA_MODEL_NAME];
-    datamodel = nil;
-    datamodel = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    UserDataModel *datamodel1 = nil;
+    datamodel1 = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     NSLog(@"DataModel:%@", datamodel);
+    
+    //判断两个对象是否相同
+    datamodel1.userAge  = 11;
+    [datamodel isSameWithObject:datamodel1] ? NSLog(@"Yes") : NSLog(@"NO");
+    
+    NSString *str1 = @"123";
+    NSString *str2 = [[NSMutableString alloc] initWithString:@"123"];
+    
+    [str1 isEqual:str2] ? NSLog(@"stringEqual") : NSLog(@"stringNotEqual");
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,13 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "KeyArchiver/ViewController.m"
-         timestampString = "395739936.99325"
+         filePath = "KeyArchiver/BaseModel.m"
+         timestampString = "398671696.6069"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "68"
+         endingLineNumber = "68"
+         landmarkName = "-classPropertListNameWithBlock:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
