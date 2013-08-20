@@ -23,7 +23,8 @@
     const char *className = class_getName(classRef);
     // method 2
     NSString *classNameStr = NSStringFromClass(classRef);
-    NSLog(@"~classDealloced:%s    -  %@", className, classNameStr);
+    //className is same as [classNameStr UTF8String]
+    NSLog(@"~classDealloced:%s  -  %@", className, classNameStr);
 }
 
 - (id)copyWithZone:(NSZone *)zone
@@ -74,7 +75,6 @@
     }
     return self;
 }
-
 
 - (NSString *)description
 {

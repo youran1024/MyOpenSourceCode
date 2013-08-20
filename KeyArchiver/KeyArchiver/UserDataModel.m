@@ -10,10 +10,6 @@
 
 @implementation UserDataModel
 
-- (void)dealloc
-{
-    [super classDealloced];
-}
 
 - (id)init
 {
